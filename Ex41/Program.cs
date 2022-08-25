@@ -10,7 +10,7 @@ int countPositiveDigits = 0;
 
 for(int i = 0; i < size; i++)
 {
-if(arrayM[i] > 0) count += 1;
+if(arrayM[i] > 0) countPositiveDigits += 1;
 }
 
 Console.Write($"{String.Join (", ", arrayM)} -> {countPositiveDigits}");
