@@ -1,5 +1,6 @@
-﻿int[] arrayM = new int[8];
-for(int i = 0; i < arrayM.Length; i++)
+﻿int size = Convert.ToInt32(Console.ReadLine());
+int[] arrayM = new int[size];
+for(int i = 0; i < size; i++)
 {
 Console.WriteLine($"Введите {i} элемент массива: ");
 arrayM[i] = Convert.ToInt32(Console.ReadLine());
@@ -7,7 +8,7 @@ arrayM[i] = Convert.ToInt32(Console.ReadLine());
 
 int count = 0;
 
-for(int i = 0; i < arrayM.Length; i++)
+for(int i = 0; i < size; i++)
 {
 if(arrayM[i] > 0) count += 1;
 }
