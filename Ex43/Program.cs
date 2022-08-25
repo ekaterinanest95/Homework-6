@@ -3,21 +3,21 @@ int number = Convert.ToInt32(Console.ReadLine());
 int i = 0;
 int digit = -1;
 int result = number;
-int[] array = new int[10];
+int[] binaryArray = new int[10];
 
 while(result > 0)
 {
 digit = result % 2;
-array[i] = digit;
+binaryArray[i] = digit;
 result /= 2;
 i++;
 }
 
-for(int ind = i; ind > 0; ind--)
+for(int index = i; index > 0; index--)
 {
-while(array[i] != 1)
+while(binaryArray[i] != 1)
 {
 i--;
 }
-Console.Write(array[ind-1]);
+Console.Write(binaryArray[index-1]);
 }
